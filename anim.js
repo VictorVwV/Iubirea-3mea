@@ -75,6 +75,11 @@ window.addEventListener('load', () => {
     alert("Autoplay failed. User interaction may be required.");
   });
 });
+window.addEventListener('load', playAudio);
+
+// If autoplay is blocked, listen for any user interaction to play the audio
+document.body.addEventListener('click', playAudio);
+document.body.addEventListener('touchstart', playAudio);
 
 
 
