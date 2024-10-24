@@ -72,9 +72,10 @@ window.addEventListener('load', () => {
   const audio = document.getElementById('background-audio');
   audio.muted = false; // Unmute the audio
   audio.play().catch((error) => {
-    console.log("Autoplay failed. User interaction may be required.");
+    alert("Autoplay failed. User interaction may be required.");
   });
 });
+
 
 
 // Llama a la función después de 216 segundos (216,000 milisegundos)
